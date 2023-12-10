@@ -7,3 +7,39 @@ body{
     height: 100vh;
     object-fit: cover;
 }
+#left-joystick-border{
+    position: absolute;
+    display:block;
+    top: 80vw;
+    left: 5vw;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%
+}
+#left-joystick{
+    position: absolute;
+    display:block;
+    top: 80vw;
+    left: 5vw;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%
+}
+#right-joystick-border{
+    position: absolute;
+    display:block;
+    top: 80vw;
+    left: 80vw;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%
+}
+#right-joystick{
+    position: absolute;
+    display:block;
+    top: 80vw;
+    left: 80vw;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%
+}
