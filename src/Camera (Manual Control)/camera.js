@@ -54,33 +54,3 @@ navigator.mediaDevices.getUserMedia({ video: true })
     backButton.addEventListener('click', () => {
       window.location.href = '../Index/index.html';
     });
-
-//Joystick code
-let canvas = document.getElementById('canvas');
-canvas.width = video.offsetWidth;
-canvas.height = video.offsetHeight;
-canvas.style.position = 'absolute';
-canvas.style.top = video.offsetTop + 'px';
-canvas.style.left = video.offsetLeft + 'px';
-document.body.appendChild(canvas);
-
-let ctx = canvas.getContext('2d');
-
-//Create 2 joystick objects
-let joystick1 = {x: 50, y: canvas.height - 50, dx: 0, dy: 0};
-let joystick2 = {x: canvas.width - 50, y: canvas.height - 50, dx: 0, dy: 0};
-
-//Draw the joysticks
-function drawJoysticks() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  ctx.beginPath();
-  ctx.arc(joystick1.x, joystick1.y, 40, 0, 2 * Math.PI);
-  ctx.fillStyle = 'white';
-  ctx.fill();
-  ctx.stroke();
-
-  ctx.beginPath();
-  ctx.arc(joystick2.x, joystick2.y, 40, 0, 2 * Math.PI);
-  ctx.stroke();
-}
