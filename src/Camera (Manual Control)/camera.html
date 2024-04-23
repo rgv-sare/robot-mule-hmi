@@ -11,7 +11,10 @@
     <button id="back-button">Back to Menu</button>
     <button id="camera-button">Select</button>
     <select id="camera-select">Camera List</select>
-    <video id="camera-feed" autoplay></video>
+    <div id ="video-container" style = "position: relative;">
+        <video id="camera-feed" autoplay></video>
+        <canvas id = "joystick-canvas" style = "position: absolute; top: 0; left: 0;"></canvas>
+    </div>
 </body>
 </html>
 
